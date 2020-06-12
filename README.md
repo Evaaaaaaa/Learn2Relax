@@ -33,7 +33,7 @@ cd Learn2Relax/build
 conda install pip
 pip install -r requirements.txt
 ```
-- For first time using running the project, you need to download some important data packages
+- For first time using running the project, packages need to be downloaded by running config.py
 ```
 cd Learn2Relax
 python config.py
