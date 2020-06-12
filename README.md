@@ -23,6 +23,10 @@ This project requires Python 3.7.4 and conda environment. To setup the environme
 conda create -n new_env python=3.7.4 
 conda activate new_env 
 ```
+- Install pip if you don't have one
+```
+conda install pip
+```
 - Clone the github repository
 ```
 https://github.com/Evaaaaaaa/Learn2Relax.git
@@ -30,13 +34,11 @@ https://github.com/Evaaaaaaa/Learn2Relax.git
 - Install the required packages in the conda environment
 ```
 cd Learn2Relax/build
-conda install pip
 pip install -r requirements.txt
 ```
-- For first time using running the project, nltk data packages need to be downloaded by running config.py
+- Download nltk data packages
 ```
-cd Learn2Relax
-python config.py
+python Learn2Relax/config.py
 ```
 ### Additional Setup
 - If you have GPU and would like to run the BERT model, install:
