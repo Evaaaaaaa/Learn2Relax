@@ -47,6 +47,13 @@ python Learn2Relax/config.py
 ```
 pip install tensorflow-gpu==1.15
 ```
+### Run API
+To run the Streamlit app
+```
+cd streamlit
+streamlit run app.py
+```
+If no browser window popup, past the Network URL in your browser and you'll be able to see the web app.
 
 ## Analysis
 In this project, I trained the dataset with three feature extraction models TF-IDF, Word2Vec with TF-IDF as weights and 
