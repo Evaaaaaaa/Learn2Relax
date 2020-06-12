@@ -58,7 +58,7 @@ To run the API locally
 cd streamlit
 streamlit run app.py
 ```
-If no browser window popup, paste the Network URL from shell into your browser and you'll be able to see the web app.
+If no browser window pops up, paste the Network URL from shell into your browser and you'll be able to see the web app.
 
 ## Analysis
 In this project, I trained the dataset with three feature extraction models TF-IDF, Word2Vec with TF-IDF as weights and 
