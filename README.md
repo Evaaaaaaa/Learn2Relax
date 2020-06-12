@@ -20,11 +20,11 @@ conda activate new_env
 ```
 - Clone the github repository
 ```
-git clone https://github.com/gillian850413/Insight_Stress_Analysis.git
+https://github.com/Evaaaaaaa/Learn2Relax.git
 ```
 - Install the required packages in the conda environment
 ```
-cd Insight_Stress_Analysis/build
+cd Learn2Relax/build
 conda install pip
 pip install -r requirements.txt
 ```
