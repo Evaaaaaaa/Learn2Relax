@@ -4,6 +4,7 @@ import numpy as np
 import pickle
 from nltk.corpus import RegexpTokenizer
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.svm import LinearSVC
 
 # Main function
 def main(args):
