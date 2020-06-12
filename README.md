@@ -53,7 +53,7 @@ pip install streamlit
 pip install tensorflow-gpu==1.15
 ```
 ### Run API
-To run the Streamlit app
+To run the API locally
 ```
 cd streamlit
 streamlit run app.py
