@@ -16,7 +16,7 @@ def run_app():
 
     if user_input:
         # Display rediction as table
-        if inference(user_input)[0] == 1:
+        if inference(user_input) == 1:
           st.write("Your input indicates a sign of stress. If you think you're suffering from stress, anxiety, or any other medical health condition, please seek help from a mental health professional in order to receive a proper diagnosis and support.")
         else:
           st.write("Great! Your input doesn't show any signs of stress.")
