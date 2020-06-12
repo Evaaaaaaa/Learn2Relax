@@ -1,5 +1,6 @@
 # Learn2Relax
-### Stress Detection in Social Media 
+Stress Detection in Social Media 
+
 ## Motivation for this project
 Social media is a major platform where people express their worries and stresses across the world. 
 
