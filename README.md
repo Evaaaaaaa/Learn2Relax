@@ -4,10 +4,10 @@ Social media is a major platform where people express their worries and stresses
 
 This project is built in order to analyze content and identify stress from reddit data by deploying NLP techniques. The project uses upervised learning with pre-trained word embeddings on unlabled data with both discrete and neural models for predicting stress. 
 
+Here is my [prensentation](https://docs.google.com/presentation/d/1iP30LCj5r9J11xRYRZ-fx1AbvrOgq5UCh-aI3sfWKRs/edit#slide=id.p).
+
 ## Data
 Labeleded data can be downloaded at [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133).
-
-Here is my [prensentation](https://docs.google.com/presentation/d/1iP30LCj5r9J11xRYRZ-fx1AbvrOgq5UCh-aI3sfWKRs/edit#slide=id.p).
 
 ## Requisites
 - MacOS or Linux
