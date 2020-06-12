@@ -42,6 +42,11 @@ pip install -r requirements.txt
 ```
 python Learn2Relax/config.py
 ```
+- Download Streamlit to run the application
+```
+pip install streamlit
+```
+
 ### Additional Setup
 - Install tensorflow for GPU to run BERT model on GPU
 ```
