@@ -41,7 +41,7 @@ pip install -r requirements.txt
 python Learn2Relax/config.py
 ```
 ### Additional Setup
-- If you have GPU and would like to run the BERT model, install:
+- Install tensorflow for GPU to run BERT model on GPU
 ```
 pip install tensorflow-gpu==1.15
 ```
