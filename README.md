@@ -66,6 +66,10 @@ After feature extraction, 9 classification models were trained: <br>Logistic reg
 
 <img src="figs/supervised_results.png" width="650">
 
+|lll|Traditional ML Models        |BERT  |
+|:---|:-----------------------------|:------|
+|Avg. Training Time|00.449530 sec                |3 min 48.131239 sec|    
+ 
 - Recall is the most important metric here because we want to predict as more stress posts accurately as possible, as well as prevent misclassifying non-stress posts as stressful.
 
 - BERT is the most robust model with all four metrics the highest.
