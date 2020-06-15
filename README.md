@@ -42,8 +42,14 @@ pip install tensorflow-gpu==1.15
 ```
 
 ## Data
-Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). <br> Picture below shows top 20 frequent words in stressed posts and non-stressed posts.
+Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
+
+Picture below shows words similarities in the dataset.
+<img src="figs/similar_words.png" width="1000">
+
+Top 20 frequent words in stressed posts and non-stressed posts are shown in the chart below.
 <img src="figs/Top_20_words.png" width="1000">
+
 
 ## Analysis
 In this project, I trained the dataset with three feature extraction models TF-IDF, Word2Vec with TF-IDF as weights and 
