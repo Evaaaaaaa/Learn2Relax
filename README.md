@@ -66,7 +66,7 @@ After feature extraction, 9 classification models were trained: <br>Logistic reg
 
 <img src="figs/supervised_results.png" width="650">
 
-|lll|Traditional ML Models        |BERT  |
+||Traditional ML Models        |BERT  |
 |:---|:-----------------------------|:------|
 |Avg. Training Time|00.449530 sec                |3 min 48.131239 sec|    
  
