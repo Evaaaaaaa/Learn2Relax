@@ -42,7 +42,7 @@ pip install tensorflow-gpu==1.15
 ```
 
 ## Data
-Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). Top 20 frequent words in stressed posts and non-stressed post are
+Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). <br> Picture below shows top 20 frequent words in stressed posts and non-stressed posts.
 <img src="figs/Top_20_words.png" width="1000">
 
 ## Analysis
