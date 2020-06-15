@@ -1,7 +1,7 @@
 # Learn2Relax
 Stress Detection in Social Media 
 
-Here is my [prensentation](https://docs.google.com/presentation/d/1iZFROfJrI9I-OIB1vEbSchwLOnL0VAU-T9Yg5wtN2lM/edit#slide=id.g88a113bda5_0_66).
+Here is my [prensentation](https://docs.google.com/presentation/d/1iZFROfJrI9I-OIB1vEbSchwLOnL0VAU-T9Yg5wtN2lM/edit#slide=id.p).
 
 ## Motivation for this project
 Social media is a major platform where people express their worries and stresses across the world. The project is built in order to analyze content and identify stress from reddit data by deploying NLP techniques. Supervised learning with pre-trained word embeddings is deployed on unlabled data with both discrete and neural models. 
