@@ -47,7 +47,8 @@ Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis
 Picture below shows words similarities in the dataset.
 <img src="figs/similar_words.png" width="1000">
 
-Top 20 frequent words in stressed posts and non-stressed posts are shown in the chart below.
+Top 20 frequent words in stressed posts and non-stressed posts are 
+
 <img src="figs/Top_20_words.png" width="1000">
 
 
