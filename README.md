@@ -1,8 +1,15 @@
-# Stress Analysis in Social Media 
-## Motivation for this project
-Social media is a major platform where people express their worries and stresses across the world. This project is built in order to analyze content and identify stress from reddit data by deploying NLP techniques. The project uses upervised learning with pre-trained word embeddings on unlabled data with both discrete and neural models for predicting stress. It was inspired by paper [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133).
+# Learn2Relax
+Stress Detection in Social Media 
 
 Here is my [prensentation](https://docs.google.com/presentation/d/1iP30LCj5r9J11xRYRZ-fx1AbvrOgq5UCh-aI3sfWKRs/edit#slide=id.p).
+
+## Motivation for this project
+Social media is a major platform where people express their worries and stresses across the world. 
+
+This project is built in order to analyze content and identify stress from reddit data by deploying NLP techniques. The project uses upervised learning with pre-trained word embeddings on unlabled data with both discrete and neural models for predicting stress. 
+
+## Data
+Labeleded data can be downloaded at [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133).
 
 ## Requisites
 - MacOS or Linux
@@ -18,23 +25,25 @@ This project requires Python 3.7.4 and conda environment. To setup the environme
 conda create -n new_env python=3.7.4 
 conda activate new_env 
 ```
+- Install pip if you don't have one
+```
+conda install pip
+```
 - Clone the github repository
 ```
-git clone https://github.com/gillian850413/Insight_Stress_Analysis.git
+https://github.com/Evaaaaaaa/Learn2Relax.git
 ```
 - Install the required packages in the conda environment
 ```
-cd Insight_Stress_Analysis/build
-conda install pip
+cd Learn2Relax/build
 pip install -r requirements.txt
 ```
-- For first time using running the project, you need to download some important data packages
+- Download nltk data packages
 ```
-cd Learn2Relax
-python config.py
+python Learn2Relax/config.py
 ```
 ### Additional Setup
-- If you have GPU and would like to run the BERT model, install:
+- Install tensorflow for GPU to run BERT model on GPU
 ```
 pip install tensorflow-gpu==1.15
 ```
