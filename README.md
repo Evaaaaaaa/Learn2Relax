@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ```
 - Download nltk data packages
 ```
-python Learn2Relax/config.py
+python Learn2Relax/configs/config.py
 ```
 ### Additional Setup
 - Install tensorflow for GPU to run BERT model on GPU
@@ -42,7 +42,8 @@ pip install tensorflow-gpu==1.15
 ```
 
 ## Data
-Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133).
+Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). Top 20 frequent words in stressed posts and non-stressed post are
+<img src="figs/Top_20_words.png" width="1000">
 
 ## Analysis
 In this project, I trained the dataset with three feature extraction models TF-IDF, Word2Vec with TF-IDF as weights and 
