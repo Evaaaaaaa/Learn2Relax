@@ -61,7 +61,7 @@ regression, SVM and random forest. Besides, BERT uses a fine tuning neural netwo
 
 <img src="figs/supervised_results.png" width="650">
 
-|Featurization|Best Model|Accuracy|Precision|Recall|F1-Score|
+|Featurization Method|Best Model|Accuracy|Precision|Recall|F1-Score|
 |:-------------|:----------|:--------|:---------|:------|:--------|
 |Unigram TF-IDF|Logistic Regression|84.23%  |82.87%   |90.36%|86.46%  |
 |Bigram TF-IDF|SVM       |84.23%  |83.24%   |89.76%|86.38%  |
