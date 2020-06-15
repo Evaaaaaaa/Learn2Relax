@@ -7,7 +7,7 @@ Here is my [prensentation](https://docs.google.com/presentation/d/1iZFROfJrI9I-O
 Social media is a major platform where people express their worries and stresses across the world. The project is built in order to analyze content and identify stress from reddit data by deploying NLP techniques. Supervised learning with pre-trained word embeddings is deployed on unlabled data with both discrete and neural models. 
 
 ## Data
-Labeleded data can be downloaded at [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133).
+Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133).
 
 ## Requisites
 - MacOS or Linux
@@ -61,7 +61,7 @@ regression, SVM and random forest. Besides, BERT uses a fine tuning neural netwo
 - BERT is the most stable model in this case, with a balanced FP and FN. 
 - Both model can predict whether the text is stressful or non stressful and provide a confidence score
 
-<img src="https://github.com/ppriyank/Pytorch-CustomDataset-FasterRCNN/blob/master/images/fasterRCNN_pipeline.jpg" width="1000">
+<img src="figs/supervised_results.png" width="1000">
 
 ## Reference
 - [[NLP] Performance of Different Word Embeddings on Text Classification](https://towardsdatascience.com/nlp-performance-of-different-word-embeddings-on-text-classification-de648c6262b)
