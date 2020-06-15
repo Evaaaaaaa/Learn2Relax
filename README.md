@@ -4,9 +4,6 @@ Stress Detection in Social Media. <br>Here is my [prensentation](https://docs.go
 ## Motivation for this project
 Social media is a major platform where people express their worries and stresses across the world. The project is built in order to analyze content and identify stress from reddit data by deploying NLP techniques. Supervised learning with pre-trained word embeddings is deployed on unlabled data with both discrete and neural models. 
 
-## Data
-Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133).
-
 ## Requisites
 - MacOS or Linux
 - Python 3.7.4
@@ -43,6 +40,9 @@ python Learn2Relax/config.py
 ```
 pip install tensorflow-gpu==1.15
 ```
+
+## Data
+Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133).
 
 ## Analysis
 In this project, I trained the dataset with three feature extraction models TF-IDF, Word2Vec with TF-IDF as weights and 
