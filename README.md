@@ -61,7 +61,7 @@ regression, SVM and random forest. Besides, BERT uses a fine tuning neural netwo
 - BERT is the most stable model in this case, with a balanced FP and FN. 
 - Both model can predict whether the text is stressful or non stressful and provide a confidence score
 
-<img src="figs/supervised_results.png" width="1000">
+<img src="figs/supervised_results.png" width="800">
 
 ## Reference
 - [[NLP] Performance of Different Word Embeddings on Text Classification](https://towardsdatascience.com/nlp-performance-of-different-word-embeddings-on-text-classification-de648c6262b)
