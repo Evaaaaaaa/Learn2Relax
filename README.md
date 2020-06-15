@@ -62,7 +62,13 @@ regression, SVM and random forest. Besides, BERT uses a fine tuning neural netwo
 - Both model can predict whether the text is stressful or non stressful and provide a confidence score
 
 <img src="figs/supervised_results.png" width="650">
-
+|Featurization|Best Model|Accuracy|Precision|Recall|F1-Score|
+|-------------|----------|--------|---------|------|--------|
+|Unigram TF-IDF|Logistic Regression|84.23%  |82.87%   |90.36%|86.46%  |
+|Bigram TF-IDF|SVM       |84.23%  |83.24%   |89.76%|86.38%  |
+|Word2Vec + TF-IDF|XGBoost   |85.23%  |82.80%   |92.77%|87.50%  |
+|Pretrained Embeddings|XGBoost   |84.56%  |81.58%   |93.37%|87.08%  |
+|BERT Embeddings|BERT      |92.74%  |92.90%   |94.58%|93.73%  |
 ## Reference
 - [[NLP] Performance of Different Word Embeddings on Text Classification](https://towardsdatascience.com/nlp-performance-of-different-word-embeddings-on-text-classification-de648c6262b)
 - [Predicting Movie Reviews with BERT on TF Hub](https://colab.research.google.com/github/google-research/bert/blob/master/predicting_movie_reviews_with_bert_on_tf_hub.ipynb)
