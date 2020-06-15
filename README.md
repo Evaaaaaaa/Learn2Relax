@@ -45,7 +45,7 @@ pip install tensorflow-gpu==1.15
 Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
 
 Picture below shows words similarities in the dataset.
-<img src="figs/similar_words.png" width="700">
+<img src="figs/similar_words.png" width="1000">
 
 Top 20 frequent words in stressed posts and non-stressed posts:
 
