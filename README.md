@@ -4,7 +4,7 @@ Stress Detection in Social Media
 Here is my [prensentation](https://docs.google.com/presentation/d/1iP30LCj5r9J11xRYRZ-fx1AbvrOgq5UCh-aI3sfWKRs/edit#slide=id.p).
 
 ## Motivation for this project
-Social media is a major platform where people express their worries and stresses across the world. The project is built in order to analyze content and identify stress from reddit data by deploying NLP techniques. Supervised learning with pre-trained word embeddings is used on unlabled data with both discrete and neural models. 
+Social media is a major platform where people express their worries and stresses across the world. The project is built in order to analyze content and identify stress from reddit data by deploying NLP techniques. Supervised learning with pre-trained word embeddings is deployed on unlabled data with both discrete and neural models. 
 
 ## Data
 Labeleded data can be downloaded at [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133).
