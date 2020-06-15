@@ -52,23 +52,10 @@ Top 20 frequent words in stressed posts and non-stressed posts:
 <img src="figs/Top_20_words.png" width="1000">
 
 
-## Analysis
-In this project, I trained the dataset with three feature extraction models TF-IDF, Word2Vec with TF-IDF as weights and 
-BERT. After extracting the features, I trained the features with traditional classification models such as logistic
-regression, SVM and random forest. Besides, BERT uses a fine tuning neural network to classify the text based on sentences. 
+## Classification
+Features for the labeled dataset were generated five different feature extraction methods: unigram TF-IDF, bigram TF-IDF, Word2Vec with TF-IDF as weights and BERT embeddings. Word2Vec embeddings were also trained with 190k unlabeled Reddit posts. After feature extraction, 9 classification models were trained: Logistic regression, Naive Bayes, SVM, AdaBoost, Gradient Boosting, Decision Tree, Random forest, XGBoost and BERT. 
 
 ### Results
-- Recall is the most important metric because we want to identify the stress posts accurately. However, we also want to prevent misclassifying a lot of non-stress posts as stress post. 
-- Although word2vec+tfidf with random forest has the highest recall, it also misclassified a lot of non-stress as stress 
-(low precision). 
-    - Some sentences may look non-stress, but they include words with high tfidf weights in stress posts (from train set),
-    which may make them be classified as stress.
-    
-- BERT is the most stable model in this case, with a balanced FP and FN. 
-- Both model can predict whether the text is stressful or non stressful and provide a confidence score
-
-<img src="figs/supervised_results.png" width="650">
-
 |Featurization Method|Best Model|Accuracy|Precision|Recall|F1-Score|
 |:-------------|:----------|:--------|:---------|:------|:--------|
 |Unigram TF-IDF|Logistic Regression|84.23%  |82.87%   |90.36%|86.46%  |
@@ -76,6 +63,13 @@ regression, SVM and random forest. Besides, BERT uses a fine tuning neural netwo
 |Word2Vec + TF-IDF|XGBoost   |85.23%  |82.80%   |92.77%|87.50%  |
 |Pretrained Embeddings|XGBoost   |84.56%  |81.58%   |93.37%|87.08%  |
 |BERT Embeddings|BERT      |92.74%  |92.90%   |94.58%|93.73%  |
+
+<img src="figs/supervised_results.png" width="650">
+
+- Recall is the most important metric here because we want to predict as more stress posts accurately as possible, as well as prevent misclassifying non-stress posts as stressful.
+
+- BERT is the most robust model with all four metrics the highest.
+- All models are able to provide a confidence score in addition to prediction.
 
 ## Reference
 - [[NLP] Performance of Different Word Embeddings on Text Classification](https://towardsdatascience.com/nlp-performance-of-different-word-embeddings-on-text-classification-de648c6262b)
