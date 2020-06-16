@@ -10,3 +10,4 @@ bert-tensorflow
 wordcloud
 xgboost
 tqdm
+streamlit
