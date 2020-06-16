@@ -48,7 +48,7 @@ Top 20 frequent words in stressed posts and non-stressed posts are shown below.
 <img src="figs/Top_20_words.png" width="1000">
 
 ## Run inference App
-To run the streamlit web app in your browser, run following command after all required packages are installed and conda environment are activated.
+To run the streamlit web app in your browser, run following command after all required packages are installed and conda environment is activated.
 ```
 cd Learn2Relax/streamlit
 streamlit run app.py
