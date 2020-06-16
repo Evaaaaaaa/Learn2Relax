@@ -81,8 +81,3 @@ After feature extraction, 9 classification models were trained: <br>Logistic reg
 
 - BERT is the most robust model with all four metrics the highest.
 - All models are able to provide a confidence score in addition to prediction.
-
-## Reference
-- [[NLP] Performance of Different Word Embeddings on Text Classification](https://towardsdatascience.com/nlp-performance-of-different-word-embeddings-on-text-classification-de648c6262b)
-- [Predicting Movie Reviews with BERT on TF Hub](https://colab.research.google.com/github/google-research/bert/blob/master/predicting_movie_reviews_with_bert_on_tf_hub.ipynb)
-
