@@ -5,13 +5,13 @@ Stress detection on Social Media ([presentation](https://docs.google.com/present
 Social media is a major platform where people express their worries and stresses across the world. Learn2Relax was built in order to analyze content and identify stress from Reddit dataset by deploying NLP techniques. Word embeddings were pre-trained on unlabeled data and deployed by both discrete and neural supervised models. 
 
 ## Installation
-The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
+- The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
 > `pip install -r requirements.txt`
 
-Or if you prefer to use conda
+- Or if you prefer to use conda
 > `conda install --file requirements.txt`
 
-Download nltk data packages for text tokenization
+- Download nltk data packages for text tokenization
 ```
 python Learn2Relax/configs/config.py
 ```
@@ -21,8 +21,7 @@ python Learn2Relax/configs/config.py
 ```
 pip install tensorflow-gpu==1.15
 ```
-- Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. 
-If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
+- Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. <br>If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
 
 ## Data
 Picture below shows words similarities in the dataset.
