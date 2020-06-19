@@ -67,4 +67,4 @@ Word2Vec embeddings were also trained with 190k unlabeled Reddit posts.
 
 ## Credits 
 ### Dataset
-The labeled data are retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
+The labeled data is retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
