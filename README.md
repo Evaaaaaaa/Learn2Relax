@@ -77,7 +77,7 @@ After feature extraction, 9 classification models were trained: <br>Logistic reg
 |:---|:-----------------------------|:------|
 |Avg. Training Time|00.449530 sec                |3 min 48.131239 sec|    
  
-- Recall is the most important metric here because we want to predict as more stress posts accurately as possible, as well as prevent misclassifying non-stress posts as stressful.
+- Recall is the most important metric here because we want to best prevent misclassification of stress posts as non-stressful which helps us better understand the stressful contents in social media.
 
 - BERT is the most robust model with all four metrics the highest.
 - All models are able to provide a confidence score in addition to prediction.
