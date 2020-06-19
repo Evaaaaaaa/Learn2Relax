@@ -32,7 +32,7 @@ To run the streamlit web app in your browser, make sure streamlit is installed, 
 >`streamlit run streamlit/app.py`
 
 If no browser window pops up, paste the Network URL in the browser and you will be able to see the app interface as below. 
-<img src="figs/streamlit4.gif" width="500">
+<img src="figs/streamlit4.gif" width="450">
 
 To create a containerized application, run
 >`docker build --tag learn2relax-streamlit:1.0 .`
