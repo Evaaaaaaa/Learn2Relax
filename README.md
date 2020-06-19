@@ -6,10 +6,10 @@ Social media is a major platform where people express their worries and stresses
 
 ## Installation
 The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
-> 'pip install -r requirements.txt'
+> `pip install -r requirements.txt`
 
 Or if you prefer to use conda, 
-> 'conda install --file requirements.txt'
+> `conda install --file requirements.txt`
 
 Download nltk data packages for text tokenization
 ```
