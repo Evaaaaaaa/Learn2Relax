@@ -1,7 +1,7 @@
 # Learn2Relax
 Stress detection on Social Media ([presentation](https://docs.google.com/presentation/d/1iZFROfJrI9I-OIB1vEbSchwLOnL0VAU-T9Yg5wtN2lM/edit#slide=id.p)).
 
-## Motivation
+### Motivation
 Social media is a major platform where people express their worries and stresses across the world. Learn2Relax was built in order to analyze content and identify stress from reddit data by deploying NLP techniques. Supervised learning with pre-trained word embeddings was deployed on unlabeled data by both discrete and neural models. 
 
 ### Installation
@@ -34,7 +34,7 @@ Top 20 frequent words in stressed posts and non-stressed posts are shown below.
 
 <img src="figs/Top_20_words.png" width="1000">
 
-## Run inference App
+## Inference App
 To run the streamlit web app in your browser, run following command after all required packages are installed and conda environment is activated.
 ```
 cd Learn2Relax/streamlit
