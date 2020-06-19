@@ -1,11 +1,11 @@
 # Learn2Relax
-Stress Detection on Social Media. <br>Here is my [prensentation](https://docs.google.com/presentation/d/1iZFROfJrI9I-OIB1vEbSchwLOnL0VAU-T9Yg5wtN2lM/edit#slide=id.p).
+Stress Detection on Social Media(go [here](https://docs.google.com/presentation/d/1iZFROfJrI9I-OIB1vEbSchwLOnL0VAU-T9Yg5wtN2lM/edit#slide=id.p) for the presentation slides).
 
-## Motivation for this project
-Social media is a major platform where people express their worries and stresses across the world. The project was built in order to analyze content and identify stress from reddit data by deploying NLP techniques. Supervised learning with pre-trained word embeddings was deployed on unlabled data by both discrete and neural models. 
+## Motivation
+Social media is a major platform where people express their worries and stresses across the world. Learn2Relax was built in order to analyze content and identify stress from reddit data by deploying NLP techniques. Supervised learning with pre-trained word embeddings was deployed on unlabeled data by both discrete and neural models. 
 
 ### Installation
-- The model is tested on Python 3.7, with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
+- The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
 > `pip install -r requirements.txt` 
 
 Or if you prefer to use conda, 
@@ -24,7 +24,8 @@ pip install tensorflow-gpu==1.15
 - Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
 
 ## Data
-Labeleded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
+
+eded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
 
 Picture below shows words similarities in the dataset.
 <img src="figs/similar_words.png" width="1000">
