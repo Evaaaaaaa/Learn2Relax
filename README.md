@@ -28,7 +28,7 @@ Top 20 frequent words in stressed posts and non-stressed posts are shown below.
 <img src="figs/Top_20_words.png" width="1000">
 
 ## Inference App
-To run the streamlit web app in your browser, make sure streamlit is installed, then run 
+To run the Streamlit web app in your browser, make sure Streamlit and required packages are installed, then run 
 >`streamlit run streamlit/app.py`
 
 If no browser window pops up, paste the Network URL in the browser and you will be able to see the app interface as below. 
