@@ -11,8 +11,8 @@ The model is tested on Python 3.7 with dependencies listed in `build/requirement
 Or if you prefer to use conda
 > `conda install --file requirements.txt`
 
-
-
+<br>
+<br>
 Download nltk data packages for text tokenization
 ```
 python Learn2Relax/configs/config.py
