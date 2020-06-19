@@ -1,5 +1,5 @@
 # Learn2Relax
-Stress detection on Social Media ([presentation](https://docs.google.com/presentation/d/1iZFROfJrI9I-OIB1vEbSchwLOnL0VAU-T9Yg5wtN2lM/edit#slide=id.p)).
+Stress detection on Social Media ([presentation](https://docs.google.com/presentation/d/1iZFROfJrI9I-OIB1vEbSchwLOnL0VAU-T9Yg5wtN2lM/edit#slide=id.p))
 
 ## Motivation
 Social media is a major platform where people express their worries and stresses across the world. Learn2Relax was built in order to analyze content and identify stress from Reddit dataset by deploying NLP techniques. Word embeddings were pre-trained on unlabeled data and deployed by both discrete and neural supervised models. 
@@ -57,8 +57,9 @@ After feature extraction, 9 classification models were trained: <br>Logistic reg
 
 ||Traditional ML Models        |BERT  |
 |:---|:-----------------------------|:------|
-|Avg. Training Time|00.449530 sec                |3 min 48.131239 sec|    
- 
+|Avg. Training Time|01.837573 sec                |3 min 48.131239 sec|    
+|Avg. Inference Time|00.004543 sec                |35.714544 sec|    
+
 - Recall is the most important metric here because we want to best prevent misclassification of stress posts as non-stressful which helps us better understand the stressful contents in social media.
 
 - BERT is the most robust model with all four metrics the highest.
