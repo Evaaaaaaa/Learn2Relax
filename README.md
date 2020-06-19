@@ -8,7 +8,7 @@ Social media is a major platform where people express their worries and stresses
 - The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
 > `pip install -r requirements.txt`
 
-Or if you prefer to use conda
+- Or if you prefer to use conda
 > `conda install --file requirements.txt`
 
 - Download nltk data packages for text tokenization
@@ -24,9 +24,6 @@ pip install tensorflow-gpu==1.15
 - Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
 
 ## Data
-
-eded data is retrieved from [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
-
 Picture below shows words similarities in the dataset.
 <img src="figs/similar_words.png" width="1000">
 
@@ -74,3 +71,7 @@ After feature extraction, 9 classification models were trained: <br>Logistic reg
 
 - BERT is the most robust model with all four metrics the highest.
 - All models are able to provide a confidence score in addition to prediction.
+
+## Credits 
+### Dataset
+The labeled data are retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
