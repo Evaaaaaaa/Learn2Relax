@@ -4,35 +4,20 @@ Stress Detection on Social Media. <br>Here is my [prensentation](https://docs.go
 ## Motivation for this project
 Social media is a major platform where people express their worries and stresses across the world. The project was built in order to analyze content and identify stress from reddit data by deploying NLP techniques. Supervised learning with pre-trained word embeddings was deployed on unlabled data by both discrete and neural models. 
 
-## Requisites
-- MacOS or Linux
-- Python 3.7.4
-- conda 
-- pip
+### Installation
+- The model is tested on Python 3.7, with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
+> `pip install -r requirements.txt` 
 
-## Setup
-This project requires Python 3.7.4 and conda environment. To setup the environment, please follow these steps:
+Or if you prefer to use conda, 
+> `conda install --file requirements.txt`
 
-- Create a new conda virtual environment in local or cloud services
-```
-conda create -n new_env python=3.7.4 
-conda activate new_env 
-```
-- Clone the github repository
-```
-https://github.com/Evaaaaaaa/Learn2Relax.git
-```
-- Install the required packages in the conda environment
-```
-cd Learn2Relax/build
-pip install -r requirements.txt
-```
-- Download nltk data packages
+- Download nltk data packages 
 ```
 python Learn2Relax/configs/config.py
 ```
+
 ### Additional Setup (Optional)
-- Install tensorflow for GPU if you want to run BERT model on GPU
+- Install tensorflow for GPU to run BERT model on GPU
 ```
 pip install tensorflow-gpu==1.15
 ```
