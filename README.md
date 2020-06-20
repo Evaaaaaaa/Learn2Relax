@@ -16,20 +16,20 @@ Social media is a major platform where people express their worries and stresses
 - Or if you prefer to use Conda
 > `conda install --file build/requirements.txt`
 
-
-### Additional Setup (Optional)
-- Install tensorflow for GPU to run BERT model on GPU
->`pip install tensorflow-gpu==1.15`
-- Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
-- The models use preprocessed data files in the `data/preprocessed` repository. However, if you want to reproduce the tokenization steps from scratch using raw datafiles in `data/raw`, you need to install NLTK and NLTK datasets
+- Install NLTK
 >`pip install nltk`
-
->`python configs/config.py`
 
 If you are not using Conda, make sure you have Xcode installed if you use MacOS, otherwise `pip install nltk` might not work. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation does not work, try 
 >`sudo apt-get install python3 python3-pip ipython3 build-essential python-dev python3-dev`
 
 then install NLTK packages again.
+
+### Additional Setup (Optional)
+- Install tensorflow for GPU to run BERT model on GPU
+>`pip install tensorflow-gpu==1.15`
+- Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
+- The models use preprocessed data files in the `data/preprocessed` repository. However, if you want to reproduce the tokenization steps from scratch using raw datafiles in `data/raw`, you need to install NLTK datasets/models
+>`python configs/config.py`
 
 ## Inference App
 To run the Streamlit web app in your browser, make sure dependencies listed in `build/requirements.txt` are installed then run 
