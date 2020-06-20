@@ -16,13 +16,16 @@ Social media is a major platform where people express their worries and stresses
 - Or if you prefer to use conda
 > `conda install --file build/requirements.txt`
 
-- Download nltk data packages for text tokenization
->`python configs/config.py`
 
 ### Additional Setup (Optional)
 - Install tensorflow for GPU to run BERT model on GPU
 >`pip install tensorflow-gpu==1.15`
 - Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. <br>If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
+- The models use preprocessed data files in the `data/preprocessed` repository. However, if you want to reproduce the tokenization steps from scratch using the raw data, you need to install NLTK and NLTK datasets
+>`pip install -U nltk`
+
+>`python configs/config.py`
+Make sure you have Xcode installed if you are using MacOS, otherwise `pip install -U nltk` might not work. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. 
 
 ## Inference App
 To run the Streamlit web app in your browser, make sure Streamlit and required packages are installed, then run 
