@@ -16,39 +16,45 @@ The model is tested on Python 3.7 with dependencies listed in `build/requirement
 
 Or if you prefer to use Conda
 > `conda install --file build/requirements.txt`
-
-If NLTK package cannot be installed via above command, make sure you have Xcode installed if you use MacOS and you are not using Conda. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation of NLTK does not work, try 
+___
+Notice: If NLTK package cannot be installed via above command, make sure you have Xcode installed if you use MacOS and you are not using Conda. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation of NLTK does not work, try 
 >`sudo apt-get install python3 python3-pip ipython3 build-essential python-dev python3-dev`
 
 then install NLTK package again.
 >`pip install nltk`
-
+___
 ### Additional Setup (Optional)
 - Install tensorflow for GPU to run BERT model on GPU
->`pip install tensorflow-gpu==1.15`
+  >`pip install tensorflow-gpu==1.15`
 - Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
 - The models use preprocessed data files in the `data/preprocessed` repository. However, if you want to reproduce the tokenization steps from scratch using raw datafiles in `data/raw`, you need to install NLTK datasets/models
->`python configs/config.py`
+  >`python configs/config.py`
 
 ## Inference App
-- To run the Streamlit web app in your browser, make sure dependencies listed in `build/requirements.txt` are installed then run 
->`streamlit run app.py`
++ To run the Streamlit web app in your browser, make sure dependencies listed in `build/requirements.txt` are installed then run 
+  >`streamlit run app.py`
 
-If no browser window pops up, point your browser to the External URL and you will be able to see the app as below
-<img src="figs/streamlit4.gif" width="450">
+  If no browser window pops up, point your browser to the External URL and you will be able to see the app as below
+  <img src="figs/streamlit4.gif" width="450">
 
-- To create a containerized application locally, in the project directory `Learn2Relax`, run
->`docker build --t learn2relax-streamlit:1.0 .`
++ To create a containerized application locally,
+    - in the project directory `Learn2Relax`, run
+    >`docker build --t learn2relax-streamlit:1.0 .`
 
-- To deploy and scale up the app online using Google Kubernetes Engine(GKE) and Google Cloud Platforms(GCP)
- Prerequisites
-1. Google Cloud SDK: Before we start, you need to install the Cloud software development kit (SDK), which includes the gcloud command-line tool that provides the primary command-line interface for Google Cloud.
+    - you can run this image as a container via
+    >`docker run -p 80:80 learn2relax-streamlit:1.0 .`
 
-2. Kubenetes SDK: After you install gcloud, you need to install the kubectl command-line tool, which provides the primary command-line interface for running commands against Kubernetes clusters. kubectl can be installed via the following command: gcloud components install kubectl.
+    Point your internet browser to `localhost:80` to see the app.
 
-3. Docker: You also need to download and install Docker application. If you are new to Docker, here’s a quickstart guide.
++ To deploy and scale up the app online using Google Kubernetes Engine(GKE) and Google Cloud Platforms(GCP)
+  - Prerequisites
+  1. Google Cloud SDK: Before we start, you need to install the Cloud software development kit (SDK), which includes the gcloud command-line tool that provides the primary command-line interface for Google Cloud.
 
-4. GCP account: Deployment via GCP will incurr a charge, so you need to register for an GCP account.
+  2. Kubenetes SDK: After you install gcloud, you need to install the kubectl command-line tool, which provides the primary command-line interface for running commands against Kubernetes clusters. kubectl can be installed via the following command: gcloud components install kubectl.
+
+  3. Docker: You also need to download and install Docker application. If you are new to Docker, here’s a quickstart guide.
+
+  4. GCP account: Deployment via GCP will incurr a charge, so you need to register for an GCP account.
 
 
 ## Analysis
