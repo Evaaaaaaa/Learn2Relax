@@ -59,7 +59,7 @@ Table 1
 |Word2Vec + TF-IDF|XGBoost   |85.23%  |82.80%   |92.77%|87.50%  |
 |Pretrained Embeddings|XGBoost   |84.56%  |81.58%   |93.37%|87.08%  |
 |BERT Embeddings|BERT      |92.74%  |92.90%   |94.58%|93.73%  |
-
+                                     
 <img src="figs/supervised_results.png" width="650">
 
 Table 2
@@ -67,8 +67,8 @@ Table 2
 |:---|:-----------------------------|:------|
 |Avg. Training Time|01.837573 sec                |3 min 48.131239 sec|    
 |Avg. Inference Time|00.004543 sec                |35.714544 sec|    
-
-Best model for each featurization techniques are shown in Table 1. 
+                                                            
+Best model for each featurization techniques and their performances are shown in Table 1. 
 - Recall is the most important metric here because we want to best prevent misclassification of stress posts as non-stressful which helps us better understand the stressful contents in social media.
 
 - BERT is the most robust model with all four metrics the highest.
