@@ -78,9 +78,7 @@ Best model for each featurization technique and their performances:
 - All models are able to provide a confidence score in addition to prediction.
 
 ## Data
-The labeled data is retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
-
-Picture below shows word similarities in the dataset
+Picture below shows word similarities in the raw dataset
 <img src="figs/similar_words.png" width="1000">
 
 Top 20 frequent words in stressed posts and non-stressed posts are 
@@ -88,4 +86,9 @@ Top 20 frequent words in stressed posts and non-stressed posts are
 <img src="figs/Top_20_words.png" width="1000">
 
 ## Credits
+### Dataset
+The labeled data is retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
+
+### Code
 [Run Streamlit.io on Google Cloud Kubernetes](https://ruicosta.blog/2020/04/27/run-streamlit-io-on-google-cloud-kubernetes/)
+[Predicting Movie Reviews with BERT on TF Hub](https://colab.research.google.com/github/google-research/bert/blob/master/predicting_movie_reviews_with_bert_on_tf_hub.ipynb#scrollTo=LL5W8gEGRTAf)
