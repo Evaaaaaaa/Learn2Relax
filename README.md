@@ -1,5 +1,5 @@
 # Learn2Relax
-Stress Detection on Social Media ([presentation](https://docs.google.com/presentation/d/1iZFROfJrI9I-OIB1vEbSchwLOnL0VAU-T9Yg5wtN2lM/edit#slide=id.p))
+Stress Detection on Social Media ([live demo](http://www.datatranslator.space/) and [presentation](https://docs.google.com/presentation/d/1iZFROfJrI9I-OIB1vEbSchwLOnL0VAU-T9Yg5wtN2lM/edit#slide=id.p)).
 
 ## Motivation
 Social media is a major platform where people express their worries and stresses across the world. Learn2Relax was built in order to analyze content and identify stress from Reddit dataset by deploying NLP techniques. Word embeddings were pre-trained on unlabeled data and deployed by both discrete and neural supervised models. 
@@ -11,11 +11,11 @@ Social media is a major platform where people express their worries and stresses
 + Change working directory
   > `cd Learn2Relax`
 
-+ The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
-  > `pip install -r build/requirements.txt`
++ The model is tested on Python 3.7 with dependencies listed in `requirements.txt`. To install these Python dependencies, please run 
+  > `pip install -r requirements.txt`
 
   Or if you prefer to use Conda
-  > `conda install --file build/requirements.txt`
+  > `conda install --file requirements.txt`
 
 **Notice**: If NLTK package cannot be installed via above command, make sure you have Xcode installed if you use MacOS and you are not using Conda. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation of NLTK does not work, try 
 >`sudo apt-get install python3 python3-pip ipython3 build-essential python-dev python3-dev`
@@ -31,7 +31,9 @@ then install NLTK package via
   >`python configs/config.py`
 
 ## Inference App
-+ To run the Streamlit web app in your browser, make sure dependencies listed in `build/requirements.txt` are installed then run 
+The [live demo](http://www.datatranslator.space/) is deployed and scaled up online using Google Kubernetes Engine(GKE) and Google Cloud Platforms(GCP). If you want to run the app locally, below are two options:
+
++ To run the Streamlit web app in shell, make sure dependencies listed in `requirements.txt` are installed then run 
   >`streamlit run app.py`
 
   If no browser window pops up, point your browser to the External URL and you will be able to see the app as below
@@ -45,17 +47,6 @@ then install NLTK package via
     >`docker run -p 80:80 learn2relax-streamlit:1.0 .`
 
     Point your internet browser to `localhost:80` to see the app.
-
-+ To deploy and scale up the app online using Google Kubernetes Engine(GKE) and Google Cloud Platforms(GCP)
-  - Prerequisites
-  1. Google Cloud SDK: Before we start, you need to install the Cloud software development kit (SDK), which includes the gcloud command-line tool that provides the primary command-line interface for Google Cloud.
-
-  2. Kubenetes SDK: After you install gcloud, you need to install the kubectl command-line tool, which provides the primary command-line interface for running commands against Kubernetes clusters. kubectl can be installed via the following command: gcloud components install kubectl.
-
-  3. Docker: You also need to download and install Docker application. If you are new to Docker, here’s a quickstart guide.
-
-  4. GCP account: Deployment via GCP will incurr a charge, so you need to register for an GCP account.
-
 
 ## Analysis
 ### Approaches
