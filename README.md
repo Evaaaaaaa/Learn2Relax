@@ -48,7 +48,7 @@ The [live demo](http://www.datatranslator.space/) is deployed and scaled up onli
 
     Point your internet browser to `localhost:80` to see the app.
 
-+ To deploy the App via GKE with your own GCP account:
++ To deploy the app via GKE with your own GCP account:
 ___
 **Prerequisites**
    1. [Google Cloud SDK](https://cloud.google.com/sdk/install)
