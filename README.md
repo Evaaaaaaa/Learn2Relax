@@ -51,7 +51,7 @@ Word2Vec embeddings were also trained with 190k unlabeled Reddit posts.
 - After feature extraction, 9 classification models were trained: Logistic Regression, Naive Bayes, SVM, AdaBoost, Gradient Boosting, Decision Tree, Random Forest, XGBoost and BERT.
 
 ### Results
-Best model for each featurization techniques and their performances:
+Best model for each featurization technique and their performances:
 |Featurization Method|Model|Accuracy|Precision|Recall|F1-Score|
 |:-------------|:----------|:--------|:---------|:------|:--------|
 |Unigram TF-IDF|Logistic Regression|84.23%  |82.87%   |90.36%|86.46%  |
