@@ -21,7 +21,7 @@ Social media is a major platform where people express their worries and stresses
 - Install tensorflow for GPU to run BERT model on GPU
 >`pip install tensorflow-gpu==1.15`
 - Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. <br>If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
-- The models use preprocessed data files in the `data/preprocessed` repository. However, if you want to reproduce the tokenization steps from scratch using the raw data, you need to install NLTK and NLTK datasets
+- The models use preprocessed data files in the `data/preprocessed` repository. However, if you want to reproduce the tokenization steps from scratch using raw datafiles in `data/raw`, you need to install NLTK and NLTK datasets
 >`pip install nltk`
 
 >`python configs/config.py`
@@ -69,8 +69,7 @@ Word2Vec embeddings were also trained with 190k unlabeled Reddit posts.
 - BERT is the most robust model with all four metrics the highest.
 - All models are able to provide a confidence score in addition to prediction.
 
-## Credits 
-### Dataset
+## Dataset
 The labeled data is retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
 
 Picture below shows words similarities in the dataset
