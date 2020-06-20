@@ -69,7 +69,7 @@ Word2Vec embeddings were also trained with 190k unlabeled Reddit posts.
 - BERT is the most robust model with all four metrics the highest.
 - All models are able to provide a confidence score in addition to prediction.
 
-## Dataset
+## Data
 The labeled data is retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
 
 Picture below shows words similarities in the dataset
