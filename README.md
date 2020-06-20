@@ -51,7 +51,7 @@ Word2Vec embeddings were also trained with 190k unlabeled Reddit posts.
 - After feature extraction, 9 classification models were trained: Logistic Regression, Naive Bayes, SVM, AdaBoost, Gradient Boosting, Decision Tree, Random Forest, XGBoost and BERT.
 
 ### Results
-|Featurization Method|Best Model|Accuracy|Precision|Recall|F1-Score|
+|Featurization Method|Model|Accuracy|Precision|Recall|F1-Score|
 |:-------------|:----------|:--------|:---------|:------|:--------|
 |Unigram TF-IDF|Logistic Regression|84.23%  |82.87%   |90.36%|86.46%  |
 |Bigram TF-IDF|SVM       |84.23%  |83.24%   |89.76%|86.38%  |
@@ -66,6 +66,7 @@ Word2Vec embeddings were also trained with 190k unlabeled Reddit posts.
 |Avg. Training Time|01.837573 sec                |3 min 48.131239 sec|    
 |Avg. Inference Time|00.004543 sec                |35.714544 sec|    
 
+Best model for each featurization techniques are shown in the first table. 
 - Recall is the most important metric here because we want to best prevent misclassification of stress posts as non-stressful which helps us better understand the stressful contents in social media.
 
 - BERT is the most robust model with all four metrics the highest.
