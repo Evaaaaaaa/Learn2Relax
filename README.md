@@ -40,7 +40,7 @@ To run the Streamlit web app in your browser, make sure dependencies listed in `
 If no browser window pops up, paste the Network URL in the browser and you will be able to see the app interface as below. 
 <img src="figs/streamlit4.gif" width="450">
 
-To create a containerized application, run
+To create a containerized application, in the project directory `Learn2Relax`, run
 >`docker build --tag learn2relax-streamlit:1.0 .`
 
 ## Analysis
