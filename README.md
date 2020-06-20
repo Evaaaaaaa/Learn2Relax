@@ -67,10 +67,10 @@ ___
        >`gcloud auth configure-docker`<br>
        >`docker push gcr.io/{$PROJECT_ID}/learn2relax-streamlit:v3`
    4. Create a container cluster (in this example with 2 nodes). If you have already created a cluster with the gcloud container clusters, only the last step is necessary.
-       >`gcloud config set project $PROJECT_ID`<br>
-       >`gcloud config set compute/zone $COMPUTE_ZONE`<br>
-       >`gcloud container clusters create $CLUSTER_NAME`<br>
-       >`gcloud container clusters get-credentials $CLUSTER_NAME --zone $COMPUTE_ZONE --project $PROJECT_ID`
+       >`gcloud config set project {$PROJECT_ID}`<br>
+       >`gcloud config set compute/zone {$COMPUTE_ZONE}`<br>
+       >`gcloud container clusters create {$CLUSTER_NAME}`<br>
+       >`gcloud container clusters get-credentials {$CLUSTER_NAME} --zone {$COMPUTE_ZONE} --project {$PROJECT_ID}`
    5. Use Google-managed SSL certificates for your domain name: Edit the `certificate.yaml` from the cloned repo and change the host name to your respective choice. You will need to create an A record for your chosen host name with the IP address reserved above. Once you edit the certificate.yaml, run <br>
        >`kubectl apply -f certificate.yaml`
    6. Deploy app to GKE: Update the deployment.yaml and replace `PROJECT_ID` with your project ID. Once you update the yaml file, execute 
