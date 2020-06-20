@@ -32,8 +32,9 @@ If you are not using Conda, make sure you have Xcode installed if you use MacOS,
 then install NLTK packages again.
 
 ## Inference App
-To run the Streamlit web app in your browser, make sure Streamlit and required packages are installed, then run 
->`streamlit run streamlit/app.py`
+To run the Streamlit web app in your browser, make sure dependencies listed in `build/requirements.txt` are installed, then run 
+>`cd streamlit`
+>`streamlit run app.py`
 
 If no browser window pops up, paste the Network URL in the browser and you will be able to see the app interface as below. 
 <img src="figs/streamlit4.gif" width="450">
