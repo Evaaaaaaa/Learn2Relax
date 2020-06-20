@@ -34,11 +34,11 @@ then install NLTK package again.
 - To run the Streamlit web app in your browser, make sure dependencies listed in `build/requirements.txt` are installed then run 
 >`streamlit run app.py`
 
-If no browser window pops up, point your browser to the Network URL and you will be able to see the app interface as below
+If no browser window pops up, point your browser to the External URL and you will be able to see the app as below
 <img src="figs/streamlit4.gif" width="450">
 
 - To create a containerized application locally, in the project directory `Learn2Relax`, run
->`docker build --tag learn2relax-streamlit:1.0 .`
+>`docker build --t learn2relax-streamlit:1.0 .`
 
 - To deploy and scale up the app online using Google Kubernetes Engine(GKE) and Google Cloud Platforms(GCP)
  Prerequisites
