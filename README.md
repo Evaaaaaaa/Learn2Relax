@@ -87,7 +87,7 @@ Top 20 frequent words in stressed posts and non-stressed posts are
 
 ## Credits
 ### Dataset
-The labeled data is retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
+The labeled data is retrieved from [Elsbeth Turcan & Kathleen McKeown](https://arxiv.org/abs/1911.00133). 
 
 ### Code
 [Run Streamlit.io on Google Cloud Kubernetes](https://ruicosta.blog/2020/04/27/run-streamlit-io-on-google-cloud-kubernetes/)
