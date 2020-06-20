@@ -5,7 +5,7 @@ Stress Detection on Social Media ([presentation](https://docs.google.com/present
 Social media is a major platform where people express their worries and stresses across the world. Learn2Relax was built in order to analyze content and identify stress from Reddit dataset by deploying NLP techniques. Word embeddings were pre-trained on unlabeled data and deployed by both discrete and neural supervised models. 
 
 ## Installation
-- Clone the github repository
+- Clone the GitHub repository
 > `git clone https://github.com/Evaaaaaaa/Learn2Relax.git`
 - Change working directory
 > `cd Learn2Relax`
@@ -74,7 +74,7 @@ Word2Vec embeddings were also trained with 190k unlabeled Reddit posts.
 ## Data
 The labeled data is retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
 
-Picture below shows words similarities in the dataset
+Picture below shows word similarities in the dataset
 <img src="figs/similar_words.png" width="1000">
 
 Top 20 frequent words in stressed posts and non-stressed posts are 
