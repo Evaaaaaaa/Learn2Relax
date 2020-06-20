@@ -7,6 +7,7 @@ Social media is a major platform where people express their worries and stresses
 ## Installation
 - Clone the github repository
 > `git clone https://github.com/Evaaaaaaa/Learn2Relax.git`
+- Change working directory
 > `cd Learn2Relax`
 
 - The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
