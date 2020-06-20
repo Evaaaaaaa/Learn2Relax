@@ -54,7 +54,7 @@ ___
    1. [Google Cloud SDK](https://cloud.google.com/sdk/install)
    2. Kubenetes SDK, run the following command to install<br>
        >`gcloud components install kubectl`
-   3. Docker
+   3. Docker (installation guide in above *Additional Setup* section)
    4. GCP account with your GCP project ID `{PROJECT_ID}`, which you can find in the GCP console
    5. Domain name
    
