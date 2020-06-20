@@ -20,7 +20,7 @@ ___
 Notice: If NLTK package cannot be installed via above command, make sure you have Xcode installed if you use MacOS and you are not using Conda. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation of NLTK does not work, try 
 >`sudo apt-get install python3 python3-pip ipython3 build-essential python-dev python3-dev`
 
-then install NLTK package again.
+then install NLTK package via
 >`pip install nltk`
 ___
 ### Additional Setup (Optional)
