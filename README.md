@@ -49,7 +49,8 @@ The [live demo](http://www.datatranslator.space/) is deployed and scaled up onli
     Point your internet browser to `localhost:80` to see the app.
 
 + To deploy the App via GKE with your own GCP account
-  - **Prerequisites**
+___
+**Prerequisites**
    1. [Google Cloud SDK](https://cloud.google.com/sdk/install)
    2. Kubenetes SDK, run the following command to install<br>
        >`gcloud components install kubectl`
@@ -57,8 +58,7 @@ The [live demo](http://www.datatranslator.space/) is deployed and scaled up onli
    4. GCP account with your GCP project ID `{PROJECT_ID}`, which you can find in the GCP console
    5. Domain name
    
-   
-  - **Workflow**
+**Workflow**
    1. Dockerize the app<br>
        >`docker build -t gcr.io/{$PROJECT_ID}/learn2relax-streamlit:v3 .`
    2. Test the container locally and point your internet browser to `localhost:80` to see the app<br>
@@ -78,8 +78,8 @@ The [live demo](http://www.datatranslator.space/) is deployed and scaled up onli
    7. Apply the Ingress Configuration
        >`kubectl apply -f ingress.yaml`
      
-     You can now head over to the Google Cloud console and under Kubernetes Engine -> Services & Ingress you can see the Ingress being created. Wait for the Ingress to be created before you continue. Once completed, you can now visit your deployed application. For my demo you can visit: http://www.datatranslator.space/
-   
+  You can now head over to the Google Cloud console and under Kubernetes Engine -> Services & Ingress you can see the Ingress being created. Wait for the Ingress to be created before you continue. Once completed, you can now visit your deployed application. For my demo you can visit: http://www.datatranslator.space/
+___   
    
 ## Analysis
 ### Approaches
