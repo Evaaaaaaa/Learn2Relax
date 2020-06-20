@@ -14,6 +14,7 @@ RUN conda install python=3.7.4
 
 # default jupyter notebook port
 ENV PORT 8080
+ENV GOOGLE_APPLICATION_CREDENTIALS=/tmp/build/storage-read-only-service-account.json
 
 # install dependencies
 RUN apt-get update && apt-get install -y vim g++
