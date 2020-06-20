@@ -5,14 +5,18 @@ Stress Detection on Social Media ([presentation](https://docs.google.com/present
 Social media is a major platform where people express their worries and stresses across the world. Learn2Relax was built in order to analyze content and identify stress from Reddit dataset by deploying NLP techniques. Word embeddings were pre-trained on unlabeled data and deployed by both discrete and neural supervised models. 
 
 ## Installation
+- Clone the github repository
+> `git clone https://github.com/Evaaaaaaa/Learn2Relax.git`
+> `cd Learn2Relax`
+
 - The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
 > `pip install -r build/requirements.txt`
 
 - Or if you prefer to use conda
-> `conda install --file requirements.txt`
+> `conda install --file build/requirements.txt`
 
 - Download nltk data packages for text tokenization
->`python Learn2Relax/configs/config.py`
+>`python configs/config.py`
 
 ### Additional Setup (Optional)
 - Install tensorflow for GPU to run BERT model on GPU
