@@ -5,17 +5,17 @@ Stress Detection on Social Media ([presentation](https://docs.google.com/present
 Social media is a major platform where people express their worries and stresses across the world. Learn2Relax was built in order to analyze content and identify stress from Reddit dataset by deploying NLP techniques. Word embeddings were pre-trained on unlabeled data and deployed by both discrete and neural supervised models. 
 
 ## Installation
-Clone the GitHub repository
-> `git clone https://github.com/Evaaaaaaa/Learn2Relax.git`
++ Clone the GitHub repository
+  > `git clone https://github.com/Evaaaaaaa/Learn2Relax.git`
 
-Change working directory
-> `cd Learn2Relax`
++ Change working directory
+  > `cd Learn2Relax`
 
-The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
-> `pip install -r build/requirements.txt`
++ The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
+  > `pip install -r build/requirements.txt`
 
-Or if you prefer to use Conda
-> `conda install --file build/requirements.txt`
+  Or if you prefer to use Conda
+  > `conda install --file build/requirements.txt`
 
 **Notice**: If NLTK package cannot be installed via above command, make sure you have Xcode installed if you use MacOS and you are not using Conda. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation of NLTK does not work, try 
 >`sudo apt-get install python3 python3-pip ipython3 build-essential python-dev python3-dev`
