@@ -19,14 +19,6 @@ Social media is a major platform where people express their worries and stresses
 >`pip install tensorflow-gpu==1.15`
 - Download and install [Docker application](https://docs.docker.com/get-docker/) to create a containerized application for the inference demo. <br>If you are new to Docker, here’s a [quickstart guide](https://docs.docker.com/get-started/).
 
-## Data
-Picture below shows words similarities in the dataset.
-<img src="figs/similar_words.png" width="1000">
-
-Top 20 frequent words in stressed posts and non-stressed posts are shown below.
-
-<img src="figs/Top_20_words.png" width="1000">
-
 ## Inference App
 To run the Streamlit web app in your browser, make sure Streamlit and required packages are installed, then run 
 >`streamlit run streamlit/app.py`
@@ -68,3 +60,10 @@ Word2Vec embeddings were also trained with 190k unlabeled Reddit posts.
 ## Credits 
 ### Dataset
 The labeled data is retrieved from Elsbeth Turcan & Kathleen McKeown [Dreaddit: A Reddit Dataset for Stress Analysis in Social Media](https://arxiv.org/abs/1911.00133). 
+
+Picture below shows words similarities in the dataset
+<img src="figs/similar_words.png" width="1000">
+
+Top 20 frequent words in stressed posts and non-stressed posts are 
+
+<img src="figs/Top_20_words.png" width="1000">
