@@ -20,4 +20,4 @@ RUN apt-get update && apt-get install -y vim g++
 RUN pip install -r build/requirements.txt
 
 # run commands
-CMD ["streamlit", "run", "streamlit/app.py"]
+CMD ["streamlit", "run", "app.py"]
