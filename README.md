@@ -86,3 +86,6 @@ Picture below shows word similarities in the dataset
 Top 20 frequent words in stressed posts and non-stressed posts are 
 
 <img src="figs/Top_20_words.png" width="1000">
+
+## Credits
+[Run Streamlit.io on Google Cloud Kubernetes](https://ruicosta.blog/2020/04/27/run-streamlit-io-on-google-cloud-kubernetes/)
