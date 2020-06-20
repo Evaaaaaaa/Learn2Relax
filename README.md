@@ -26,7 +26,7 @@ Social media is a major platform where people express their worries and stresses
 
 >`python configs/config.py`
 
-Make sure you have Xcode installed if you are using MacOS, otherwise `pip install nltk` might not work. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation does not work, try 
+---Make sure you have Xcode installed if you are using MacOS, otherwise `pip install nltk` might not work. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation does not work, try 
 >`sudo apt-get install python3 python3-pip ipython3 build-essential python-dev python3-dev`
 
 then install NLTK packages again.
