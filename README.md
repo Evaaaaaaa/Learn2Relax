@@ -5,21 +5,22 @@ Stress Detection on Social Media ([presentation](https://docs.google.com/present
 Social media is a major platform where people express their worries and stresses across the world. Learn2Relax was built in order to analyze content and identify stress from Reddit dataset by deploying NLP techniques. Word embeddings were pre-trained on unlabeled data and deployed by both discrete and neural supervised models. 
 
 ## Installation
-- Clone the GitHub repository
+Clone the GitHub repository
 > `git clone https://github.com/Evaaaaaaa/Learn2Relax.git`
-- Change working directory
+
+Change working directory
 > `cd Learn2Relax`
 
-- The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
+The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
 > `pip install -r build/requirements.txt`
 
-- Or if you prefer to use Conda
+Or if you prefer to use Conda
 > `conda install --file build/requirements.txt`
 
 If NLTK package cannot be installed via above command, make sure you have Xcode installed if you use MacOS and you are not using Conda. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation of NLTK does not work, try 
 >`sudo apt-get install python3 python3-pip ipython3 build-essential python-dev python3-dev`
 
-then install NLTK packages again.
+then install NLTK package again.
 >`pip install nltk`
 
 ### Additional Setup (Optional)
@@ -30,14 +31,25 @@ then install NLTK packages again.
 >`python configs/config.py`
 
 ## Inference App
-To run the Streamlit web app in your browser, make sure dependencies listed in `build/requirements.txt` are installed then run 
+- To run the Streamlit web app in your browser, make sure dependencies listed in `build/requirements.txt` are installed then run 
 >`streamlit run app.py`
 
-If no browser window pops up, paste the Network URL in the browser and you will be able to see the app interface as below
+If no browser window pops up, point your browser to the Network URL and you will be able to see the app interface as below
 <img src="figs/streamlit4.gif" width="450">
 
-To create a containerized application, in the project directory `Learn2Relax`, run
+- To create a containerized application locally, in the project directory `Learn2Relax`, run
 >`docker build --tag learn2relax-streamlit:1.0 .`
+
+- To deploy and scale up the app online using Google Kubernetes Engine(GKE) and Google Cloud Platforms(GCP)
+ Prerequisites
+1. Google Cloud SDK: Before we start, you need to install the Cloud software development kit (SDK), which includes the gcloud command-line tool that provides the primary command-line interface for Google Cloud.
+
+2. Kubenetes SDK: After you install gcloud, you need to install the kubectl command-line tool, which provides the primary command-line interface for running commands against Kubernetes clusters. kubectl can be installed via the following command: gcloud components install kubectl.
+
+3. Docker: You also need to download and install Docker application. If you are new to Docker, here’s a quickstart guide.
+
+4. GCP account: Deployment via GCP will incurr a charge, so you need to register for an GCP account.
+
 
 ## Analysis
 ### Approaches
