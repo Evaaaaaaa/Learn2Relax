@@ -13,7 +13,7 @@ Social media is a major platform where people express their worries and stresses
 - The model is tested on Python 3.7 with dependencies listed in `build/requirements.txt`. To install these Python dependencies, please run 
 > `pip install -r build/requirements.txt`
 
-- Or if you prefer to use conda
+- Or if you prefer to use Conda
 > `conda install --file build/requirements.txt`
 
 
@@ -26,7 +26,7 @@ Social media is a major platform where people express their worries and stresses
 
 >`python configs/config.py`
 
----Make sure you have Xcode installed if you are using MacOS, otherwise `pip install nltk` might not work. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation does not work, try 
+If you are not using Conda, make sure you have Xcode installed if you use MacOS, otherwise `pip install nltk` might not work. To install the “minimum version” of Xcode, simply download the Command Line Tools DMG file from [here](https://developer.apple.com/download/more/) and follow the installation instructions. If you are using Windows/Linux and the installation does not work, try 
 >`sudo apt-get install python3 python3-pip ipython3 build-essential python-dev python3-dev`
 
 then install NLTK packages again.
