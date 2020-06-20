@@ -39,7 +39,7 @@ The [live demo](http://www.datatranslator.space/) is deployed and scaled up onli
   If no browser window pops up, point your browser to the External URL and you will be able to see the app as below
   <img src="figs/streamlit4.gif" width="450">
 
-+ To create a containerized application locally,
++ To create a containerized application locally
     - in the project directory `Learn2Relax`, run
       >`docker build --t learn2relax-streamlit:1.0 .`
 
@@ -56,6 +56,7 @@ The [live demo](http://www.datatranslator.space/) is deployed and scaled up onli
    3. Docker
    4. GCP account with your GCP project ID `{PROJECT_ID}`, which you can find in the GCP console
    5. Domain name
+   
    
   - **Workflow**
    1. Dockerize the app<br>
