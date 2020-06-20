@@ -1,26 +1,22 @@
-# This file configures the hello-world app which serves public web traffic.
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: learn2relax-gke
+ name: streamlitweb
+ labels:
+   app: streamlit
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: streamlit
-  template:
-    metadata:
-      labels:
-        app: streamlit
-    spec:
-      containers:
-      - name: streamlit
-        # Replace $GCLOUD_PROJECT with your project ID
-        image: gcr.io/learn2relax/myimage
-        # This app listens on port 8080 for web traffic by default.
-        ports:
-        - containerPort: 8080
-        env:
-          - name: PORT
-            value: "8080"
-
+ selector:
+   matchLabels:
+     app: streamlit
+     tier: web
+ template:
+   metadata:
+     labels:
+       app: streamlit
+       tier: web
+   spec:
+     containers:
+     - name: streamlit-app
+       image: gcr.io/learn2relax/learn2relax-streamlit:v3
+       ports:
+       - containerPort: 80

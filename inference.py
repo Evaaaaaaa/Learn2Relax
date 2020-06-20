@@ -1,15 +1,9 @@
-import argparse
 import pandas as pd
 import numpy as np
 import pickle
 from nltk.corpus import RegexpTokenizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
-
-# Main function
-def main(args):
-    # Run inference and return dataframe with ordered recommendations
-    df = inference("../models/", args['text'])
 
 # Loads model and inferences input string
 def inference(model_dir, text):
@@ -29,21 +23,3 @@ def inference(model_dir, text):
     model = pickle.load(open(model_dir+"bigram_SVM.dat", "rb"))
     y_pred = model.predict(vec)
     return y_pred[0] # 1: STRESS
-
-# Returns argument parser
-def init_argparse() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(
-        usage="%(prog)s [OPTION] [FILE]...",
-        description="Inference a SVM model for bigram tf-idf vectorization"
-    )
-    parser.add_argument(
-        "-t", "--text", help="Text to inference"
-    )
-    return parser
-
-
-if __name__ == "__main__":
-    # execute only if run as a script
-    parser = init_argparse()
-    argsNamespace = parser.parse_args()
-    main(vars(argsNamespace))

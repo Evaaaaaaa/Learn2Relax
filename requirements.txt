@@ -1,0 +1,13 @@
+pandas
+numpy
+# matplotlib==3.0.3
+scikit-learn
+# gensim
+# tensorflow==1.15.2
+# tensorflow_hub
+# bert-tensorflow
+# wordcloud
+# xgboost
+# tqdm
+streamlit
+nltk

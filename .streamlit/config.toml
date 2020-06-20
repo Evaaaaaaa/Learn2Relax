@@ -1,10 +1,11 @@
 [server]
 # Turn this to true or comment out
 enableCORS = false
+port=80
 
 [browser]
 # Put the URL people will go to here:
 # serverAddress = 34.83.109.34
 
 [global]
-logLevel="debug"
+logLevel="error"
