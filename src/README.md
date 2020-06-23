@@ -1,4 +1,4 @@
-Under the **notebooks** folder:
+Inside the **notebooks** folder:
 
 - **tf_idf.ipynb**
   - train and evaluate traditional ML models with unigram/bigram TF-IDF for feature extraction.
