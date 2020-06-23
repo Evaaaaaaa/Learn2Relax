@@ -41,7 +41,7 @@ The [live demo](http://www.datatranslator.space/) is deployed and scaled up onli
 
 + To create a containerized application locally
     - in the project directory `Learn2Relax`, run
-      >`docker build --t learn2relax-streamlit:1.0 .`
+      >`docker build -t learn2relax-streamlit:1.0 .`
 
     - you can run this image as a container via
       >`docker run -p 80:80 learn2relax-streamlit:1.0`
@@ -122,7 +122,7 @@ Top 20 frequent words in stressed posts and non-stressed posts are
 ### Dataset
 The labeled data is retrieved from [Elsbeth Turcan & Kathleen McKeown](https://arxiv.org/abs/1911.00133). 
 
-### Code
+### References
 [Predicting Movie Reviews with BERT on TF Hub](https://colab.research.google.com/github/google-research/bert/blob/master/predicting_movie_reviews_with_bert_on_tf_hub.ipynb#scrollTo=LL5W8gEGRTAf)<br>
 [Run Streamlit.io on Google Cloud Kubernetes](https://ruicosta.blog/2020/04/27/run-streamlit-io-on-google-cloud-kubernetes/)<br>
 [Step-by-Step Streamlit App Deployment Via GKE](https://hellomikelo.com/guides/2020/04/23/step-by-step-GKE-deployment.html)
