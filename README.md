@@ -95,7 +95,7 @@ Best model for each featurization technique and their performances:
 |Unigram TF-IDF|Logistic Regression|84.23%  |82.87%   |90.36%|86.46%  |
 |Bigram TF-IDF|SVM       |84.23%  |83.24%   |89.76%|86.38%  |
 |Word2Vec + TF-IDF|XGBoost   |85.23%  |82.80%   |92.77%|87.50%  |
-|Pretrained Embeddings|XGBoost   |84.56%  |81.58%   |93.37%|87.08%  |
+|Pretrained Embeddings|Random Forest   |84.56%  |81.58%   |93.37%|87.08%  |
 |BERT Embeddings|BERT      |92.74%  |92.90%   |94.58%|93.73%  |
                                      
 <img src="figs/supervised_results.png" width="650">
